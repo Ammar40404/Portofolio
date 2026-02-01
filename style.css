@@ -141,7 +141,7 @@ h5 {
 
 p {
     margin-bottom: 1.2rem;
-    color: var(--text-secondary);
+    color: #FFFFFF;
     transition: color 0.3s ease;
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.7;
@@ -1020,7 +1020,7 @@ body.dark-mode .hero-center p {
 }
 
 .contact-item {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ff6b35;
     border: 3px solid var(--border);
     padding: 25px 20px;
     text-align: center;
