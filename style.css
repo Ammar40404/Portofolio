@@ -34,6 +34,12 @@
     /* Sticky Photo Variables */
     --photo-width: 280px;
     --photo-gap: 40px;
+    
+    /* New Variables for Dark Mode Sections */
+    --hero-bg-light: var(--accent-2); /* Blue for light mode */
+    --contact-bg-light: var(--accent-2); /* Blue for light mode */
+    --hero-bg-dark: #2A3244; /* Dark gray for dark mode */
+    --contact-bg-dark: #2A3244; /* Dark gray for dark mode */
 }
 
 /* Dark Mode Variables - DIPERBAIKI dengan warna yang lebih harmonis */
@@ -141,7 +147,7 @@ h5 {
 
 p {
     margin-bottom: 1.2rem;
-    color: #FFFFFF;
+    color: var(--text-color);
     transition: color 0.3s ease;
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     line-height: 1.7;
@@ -300,16 +306,45 @@ header.scrolled {
     box-shadow: 3px 3px 0px var(--border);
 }
 
-/* Hero Section */
+/* Hero Section - DIPERBAIKI sesuai permintaan */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: var(--accent-2);
+    background-color: var(--hero-bg-light);
     color: white;
     padding-top: 80px;
     position: relative;
     overflow: hidden;
+    transition: var(--transition);
+}
+
+body.dark-mode .hero {
+    background-color: var(--hero-bg-dark);
+}
+
+/* PERBAIKAN: Tulisan "Halo, Saya Muammar" menjadi putih saat dark mode */
+body.dark-mode .hero-center h1 {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+
+/* PERBAIKAN: "Fresh Graduate in Informatics Engineering" tetap hitam di kedua mode */
+.hero-center h3 {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    color: #2D3436 !important; /* Tetap hitam */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 3px solid var(--border);
+    display: inline-block;
+    background-color: var(--secondary);
+    box-shadow: var(--shadow);
+}
+
+/* Pastikan di dark mode juga tetap hitam */
+body.dark-mode .hero-center h3 {
+    color: #2D3436 !important;
 }
 
 .hero::before {
@@ -330,6 +365,17 @@ header.scrolled {
     z-index: 0;
 }
 
+body.dark-mode .hero::before {
+    background: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 30px,
+            rgba(255, 255, 255, 0.05) 30px,
+            rgba(255, 255, 255, 0.05) 60px
+        );
+}
+
 .hero .container {
     width: 100%;
     max-width: 800px;
@@ -348,24 +394,12 @@ header.scrolled {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     font-weight: 900;
     margin-bottom: 15px;
-    color: white;
+    color: var(--text-color);
     text-shadow: 4px 4px 0px var(--border);
     background: linear-gradient(90deg, var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-.hero-center h3 {
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    border: 3px solid var(--border);
-    display: inline-block;
-    background-color: var(--secondary);
-    box-shadow: var(--shadow);
 }
 
 .hero-center p {
@@ -384,7 +418,8 @@ header.scrolled {
 }
 
 body.dark-mode .hero-center p {
-    background-color: rgba(26, 34, 50, 0.9);
+    background-color: rgba(42, 50, 68, 0.9);
+    color: var(--text-color);
 }
 
 .highlight {
@@ -979,12 +1014,17 @@ body.dark-mode .hero-center p {
     box-shadow: 2px 2px 0px var(--border);
 }
 
-/* Contact Section */
+/* Contact Section - DIPERBAIKI sesuai permintaan */
 .contact {
     padding: 60px 0;
-    background-color: var(--accent-2);
+    background-color: var(--contact-bg-light);
     color: white;
     border-top: 4px solid var(--border);
+    transition: var(--transition);
+}
+
+body.dark-mode .contact {
+    background-color: var(--contact-bg-dark);
 }
 
 .contact .section-title {
@@ -1019,8 +1059,9 @@ body.dark-mode .hero-center p {
     }
 }
 
+/* PERBAIKAN: Kotak kontak tetap oranye di kedua mode */
 .contact-item {
-    background-color: #ff6b35;
+    background-color: rgba(255, 105, 53, 1) !important; /* Tetap oranye */
     border: 3px solid var(--border);
     padding: 25px 20px;
     text-align: center;
@@ -1032,11 +1073,20 @@ body.dark-mode .hero-center p {
     backdrop-filter: blur(5px);
 }
 
+/* Pastikan di dark mode juga tetap oranye */
+body.dark-mode .contact-item {
+    background-color: rgba(255, 107, 53, 0.8) !important; /* Tetap oranye */
+}
+
 .contact-item:hover {
     border-color: var(--secondary);
     transform: translate(-4px, -4px);
     box-shadow: var(--shadow-hover);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 107, 53, 1) !important; /* Tetap oranye saat hover */
+}
+
+body.dark-mode .contact-item:hover {
+    background-color: rgba(255, 107, 53, 1) !important; /* Tetap oranye saat hover */
 }
 
 .contact-icon {
