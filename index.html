@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>MUAMMAR - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Porto<span>folio</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-center">
+                <h1>Halo, Saya <span class="highlight">Muammar</span></h1>
+                <h3>Fresh Graduate in Informatics Engineering</h3>
+                <p>
+                    Selamat datang di portofolio saya! Saya fresh graduate Teknik Informatika
+                    yang tertarik dalam pengembangan web dan desain UI/UX.
+                </p>
+
+                <!-- Social Links -->
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/muammar473/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:muamar.idm008@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/Ammar40404" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">Lihat Project</a>
+                    <a href="#contact" class="btn btn-secondary">Kontak Saya</a>
+                    <a href="assets/CV_MUAMMAR.pdf" class="btn" target="_blank" download>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+
+            <div class="about-content">
+                <!-- Foto dengan container untuk sticky scroll -->
+                <div class="about-image-wrapper" id="sticky-photo">
+                    <div class="about-image">
+                        <img src="foto/foto1q.jpg" alt="Muammar - Tentang Saya" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Konten Utama -->
+                <div class="about-main-content">
+                    <!-- Deskripsi -->
+                    <div class="about-text">
+                        <h3>Fresh Graduate</h3>
+                        <p>
+                            <strong>Fresh graduate S1 Teknik Informatika Universitas Pamulang</strong> dengan 
+                            <strong>IPK 3.55</strong>. Memiliki <strong>pengalaman magang sebagai Web Developer Intern 
+                            di Java Web Media</strong> dengan fokus pada pengembangan dan perbaikan fitur website.
+                            Terampil menggunakan <strong>HTML, CSS, JavaScript, PHP, dan MySQL</strong>, serta memiliki
+                            pemahaman <strong>UI/UX Design</strong>. Mampu bekerja secara tim, cepat beradaptasi, manajemen waktu yang baik, serta berkomitmen untuk terus belajar dan berkembang. <strong>Berminat berkarier di bidang software development dan teknologi informasi. </strong>
+                        </p>
+                    </div>
+                    
+                    <!-- Info Container -->
+                    <div class="info-container">
+                        <!-- Pendidikan -->
+                        <div class="info-section">
+                            <div class="info-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Pendidikan</h4>
+                            </div>
+                            <div class="info-content">
+                                <ul class="about-list">
+                                    <li>
+                                        <strong>S1 Teknik Informatika</strong> – Universitas Pamulang  
+                                        <br>
+                                        <span>IPK 3.55 | 2021 – 2025</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pengalaman -->
+                        <div class="info-section">
+                            <div class="info-header">
+                                <i class="fas fa-briefcase"></i>
+                                <h4>Pengalaman</h4>
+                            </div>
+                            <div class="info-content">
+                                <ul class="about-list">
+                                    <li>
+                                        <strong>Web Developer Intern</strong> – Java Web Media  
+                                        <br>
+                                        <span>
+•   Mengembangkan website menggunakan HTML, CSS, JavaScript, dan PHP (CodeIgniter). <br>
+•   Menyesuaikan struktur database sesuai kebutuhan pengembangan fitur website. <br>
+•   Melakukan perbaikan bug pada website. <br>
+•   Melakukan pengujian fungsional untuk memastikan seluruh fitur website berjalan sesuai kebutuhan. <br>
+
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sertifikasi -->
+                        <div class="info-section">
+                            <div class="info-header">
+                                <i class="fas fa-certificate"></i>
+                                <h4>Sertifikasi</h4>
+                            </div>
+                            <div class="info-content">
+                                <ul class="about-list">
+                                    <li>
+                                        <strong>Programmer</strong> – Badan Nasional Sertifikasi Profesi  
+                                        <br>
+                                        <span>2025 – 2028</span>
+                                        <a href="assets/sertifikat1.pdf" class="certification-btn-small" target="_blank">
+                                            Lihat Sertifikat <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Skills -->
+                        <div class="info-section skills-section" id="skills-section">
+                            <div class="info-header">
+                                <i class="fas fa-tools"></i>
+                                <h4>Tools & Skills</h4>
+                            </div>
+                            <div class="skills-container">
+                                <!-- Development Tools -->
+                                <div class="skills-category">
+                                    <h5><i class="fas fa-code"></i> Development Tools</h5>
+                                    <div class="skills-grid">
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto4.png" alt="HTML5" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">HTML</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto5.png" alt="CSS3" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">CSS</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto3.png" alt="JavaScript" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">JavaScript</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto2.png" alt="PHP" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">PHP</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto9.png" alt="MySQL" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">MySQL</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto10.png" alt="WordPress" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">WordPress</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Design Tools -->
+                                <div class="skills-category">
+                                    <h5><i class="fas fa-paint-brush"></i> Design Tools</h5>
+                                    <div class="skills-grid">
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto7.png" alt="Figma" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">Figma</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto6.png" alt="Photoshop" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">Photoshop</div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-icon">
+                                                <img src="foto/foto8.png" alt="Canva" loading="lazy">
+                                            </div>
+                                            <div class="skill-name">Canva</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Project</h2>
+
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="uiux">Design UI/UX</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 - UI/UX -->
+                <a href="https://www.figma.com/proto/IqJBYM6hImpJHNvr0xxMZM/TUGAS-IMK?page-id=0%3A1&node-id=1-2&viewport=103%2C88%2C0.2&t=HH1UuI2tk6d6yhzN-1&scaling=min-zoom&content-scaling=fixed" 
+                   target="_blank" class="project-link" data-category="uiux">
+                    <div class="project-card">
+                        <img src="foto/foto11.png" alt="UI Website Laundry Sepatu" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>UI Website Laundry Sepatu</h3>
+                            <p>
+                                Merupakan UI website tugas mata kuliah Interaksi Manusia dan Komputer.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 - Web Development -->
+                <a href="#" class="project-link" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
+                             alt="Analytics Dashboard" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>
+                                Dashboard interaktif untuk visualisasi data dengan grafik dan filter.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 - UI/UX -->
+                <a href="#" class="project-link" data-category="uiux">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80"
+                             alt="Mobile App Design" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>Mobile App UI Design</h3>
+                            <p>
+                                Desain UI aplikasi mobile untuk manajemen tugas dengan fokus pada user experience.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Mobile Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 - Web Development -->
+                <a href="#" class="project-link" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80"
+                             alt="E-Commerce Website" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p>
+                                Website e-commerce dengan sistem keranjang belanja dan checkout.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>muamar.idm008@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 856 9515 5879</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Ciputat, Tangerang Selatan, Banten</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Porto<span>folio</span></a>
+                    <p>Fresh Graduate in Informatics Engineering. Tertarik dalam pengembangan web dan desain UI/UX.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Saya</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ammar40404" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muammar473/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span>Portofolio - Muammar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
