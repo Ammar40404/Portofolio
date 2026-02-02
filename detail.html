@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>UI Website Laundry Sepatu - Detail Project | Portofolio Muammar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Porto<span>folio</span></a>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">Tentang</a></li>
+                    <li><a href="index.html#projects">Project</a></li>
+                    <li><a href="index.html#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Back Button -->
+    <div class="back-container">
+        <div class="container">
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Kembali ke Semua Project
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="project-detail-container">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-category">UI/UX Design</span>
+                    <h1 class="project-title">UI Website Laundry Sepatu</h1>
+                    <div class="project-year">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Gallery Slider -->
+            <section class="project-gallery">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="slider-track">
+                            <!-- Slide 1 -->
+                            <div class="slide">
+                                <img src="foto/foto11.png" alt="Homepage Design - Laundry Sepatu Website" loading="lazy">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Services Page - Pilihan Layanan" loading="lazy">
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Order Tracking System" loading="lazy">
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80" alt="Mobile Responsive Design" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <button class="slider-btn prev-btn" id="prev-btn" aria-label="Slide sebelumnya">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="next-btn" aria-label="Slide berikutnya">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="slider-dots" id="slider-dots">
+                        <div class="dot active" data-index="0"></div>
+                        <div class="dot" data-index="1"></div>
+                        <div class="dot" data-index="2"></div>
+                        <div class="dot" data-index="3"></div>
+                    </div>
+                </div>
+                
+                <!-- Project Stats -->
+                <div class="project-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Halaman UI</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value">4</span>
+                            <span class="stat-label">Minggu</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-value">1</span>
+                            <span class="stat-label">Tool Utama</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Details -->
+            <section class="project-details">
+                <div class="details-grid">
+                    <!-- Left Column -->
+                    <div class="details-left">
+                        <!-- Project Description -->
+                        <div class="detail-section">
+                            <h2 class="section-title-small">
+                                <i class="fas fa-info-circle"></i>
+                                Deskripsi Project
+                            </h2>
+                            <div class="detail-content">
+                                <p>UI Website Laundry Sepatu merupakan project mata kuliah Interaksi Manusia dan Komputer yang bertujuan untuk merancang antarmuka pengguna yang intuitif dan menarik untuk layanan laundry sepatu online.</p>
+                                <p>Website ini dirancang dengan fokus pada user experience yang optimal, memudahkan pelanggan dalam memesan layanan laundry sepatu secara online, melacak status pesanan, dan mengakses informasi lengkap tentang layanan yang tersedia.</p>
+                                <p>Project ini dikembangkan sebagai tugas akhir mata kuliah Interaksi Manusia dan Komputer dengan menggunakan metodologi design thinking yang terdiri dari 5 tahap: Empathize, Define, Ideate, Prototype, dan Test.</p>
+                            </div>
+                        </div>
+
+                        <!-- My Role -->
+                        <div class="detail-section">
+                            <h2 class="section-title-small">
+                                <i class="fas fa-user-tie"></i>
+                                Role Saya
+                            </h2>
+                            <div class="detail-content">
+                                <div class="role-list">
+                                    <div class="role-item">
+                                        <div class="role-icon">
+                                            <i class="fas fa-pencil-ruler"></i>
+                                        </div>
+                                        <div class="role-desc">
+                                            <h4>UI/UX Designer</h4>
+                                            <p>Merancang keseluruhan antarmuka pengguna dan pengalaman pengguna</p>
+                                        </div>
+                                    </div>
+                                    <div class="role-item">
+                                        <div class="role-icon">
+                                            <i class="fas fa-sitemap"></i>
+                                        </div>
+                                        <div class="role-desc">
+                                            <h4>Information Architect</h4>
+                                            <p>Menyusun struktur informasi dan navigasi website</p>
+                                        </div>
+                                    </div>
+                                    <div class="role-item">
+                                        <div class="role-icon">
+                                            <i class="fas fa-palette"></i>
+                                        </div>
+                                        <div class="role-desc">
+                                            <h4>Visual Designer</h4>
+                                            <p>Mendesain elemen visual dan menerapkan branding</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="details-right">
+                        <!-- Technologies -->
+                        <div class="detail-section">
+                            <h2 class="section-title-small">
+                                <i class="fas fa-code"></i>
+                                Teknologi & Tools
+                            </h2>
+                            <div class="detail-content">
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Figma</span>
+                                    <span class="tech-tag">Adobe Photoshop</span>
+                                    <span class="tech-tag">User Research</span>
+                                    <span class="tech-tag">Wireframing</span>
+                                    <span class="tech-tag">Prototyping</span>
+                                    <span class="tech-tag">Usability Testing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="detail-section">
+                            <h2 class="section-title-small">
+                                <i class="fas fa-star"></i>
+                                Fitur Utama
+                            </h2>
+                            <div class="detail-content">
+                                <ul class="features-list">
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Sistem pemesanan online yang mudah</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Tracking status laundry real-time</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Galeri hasil cuci sepatu</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Sistem rating dan ulasan pelanggan</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Informasi lengkap layanan dan harga</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Chat dengan customer service</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Project Goals -->
+                        <div class="detail-section">
+                            <h2 class="section-title-small">
+                                <i class="fas fa-bullseye"></i>
+                                Tujuan Project
+                            </h2>
+                            <div class="detail-content">
+                                <ul class="goals-list">
+                                    <li>
+                                        <div class="goal-number">01</div>
+                                        <div class="goal-text">
+                                            <h4>Meningkatkan Efisiensi</h4>
+                                            <p>Memudahkan proses pemesanan laundry sepatu secara online</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="goal-number">02</div>
+                                        <div class="goal-text">
+                                            <h4>Pengalaman Pengguna</h4>
+                                            <p>Menciptakan antarmuka yang intuitif dan mudah digunakan</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="goal-number">03</div>
+                                        <div class="goal-text">
+                                            <h4>Transparansi Layanan</h4>
+                                            <p>Memberikan informasi lengkap dan transparan kepada pelanggan</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="project-cta">
+                    <div class="cta-content">
+                        <h3>Tertarik dengan Project Ini?</h3>
+                        <p>Mari berdiskusi tentang bagaimana saya dapat membantu mewujudkan project Anda</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="index.html#contact" class="btn cta-btn">
+                            <i class="fas fa-envelope"></i>
+                            Hubungi Saya
+                        </a>
+                        <a href="https://www.figma.com/proto/IqJBYM6hImpJHNvr0xxMZM/TUGAS-IMK?page-id=0%3A1&node-id=1-2&viewport=103%2C88%2C0.2&t=HH1UuI2tk6d6yhzN-1&scaling=min-zoom&content-scaling=fixed" 
+                           target="_blank" class="btn btn-secondary cta-btn">
+                            <i class="fab fa-figma"></i>
+                            Lihat Prototype
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">Porto<span>folio</span></a>
+                    <p>Fresh Graduate in Informatics Engineering. Tertarik dalam pengembangan web dan desain UI/UX.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">Tentang</a></li>
+                        <li><a href="index.html#projects">Project</a></li>
+                        <li><a href="index.html#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Ikuti Saya</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ammar40404" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muammar473/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Portofolio - Muammar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Slider Functionality for Detail Pages
+        function initSlider() {
+            const sliderTrack = document.getElementById('slider-track');
+            const sliderDots = document.querySelectorAll('.dot');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            let currentSlide = 0;
+            const totalSlides = document.querySelectorAll('.slide').length;
+            
+            // Update slider position
+            function updateSlider() {
+                if (sliderTrack) {
+                    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+                
+                // Update active dot
+                sliderDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Update button states
+                if (prevBtn) prevBtn.disabled = currentSlide === 0;
+                if (nextBtn) nextBtn.disabled = currentSlide === totalSlides - 1;
+                
+                // Add/remove disabled styles
+                if (prevBtn) prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+                if (nextBtn) nextBtn.style.opacity = currentSlide === totalSlides - 1 ? '0.5' : '1';
+            }
+            
+            // Go to specific slide
+            function goToSlide(index) {
+                currentSlide = index;
+                updateSlider();
+            }
+            
+            // Next slide
+            function nextSlide() {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateSlider();
+                }
+            }
+            
+            // Previous slide
+            function prevSlide() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlider();
+                }
+            }
+            
+            // Event listeners for dots
+            sliderDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const index = parseInt(dot.getAttribute('data-index'));
+                    goToSlide(index);
+                });
+            });
+            
+            // Event listeners for buttons
+            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                }
+            });
+            
+            // Touch/swipe support for mobile
+            if (sliderTrack) {
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                sliderTrack.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                });
+                
+                sliderTrack.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                });
+                
+                function handleSwipe() {
+                    const swipeThreshold = 50;
+                    const diff = touchStartX - touchEndX;
+                    
+                    if (Math.abs(diff) > swipeThreshold) {
+                        if (diff > 0) {
+                            nextSlide();
+                        } else {
+                            prevSlide();
+                        }
+                    }
+                }
+            }
+            
+            // Initialize
+            updateSlider();
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if we're on a detail page (has slider)
+            if (document.getElementById('slider-track')) {
+                initSlider();
+            }
+            
+            // Set current year in footer
+            const currentYearElement = document.getElementById('current-year');
+            if (currentYearElement) {
+                currentYearElement.textContent = new Date().getFullYear();
+            }
+            
+            // Add animation to detail sections on scroll
+            const detailSections = document.querySelectorAll('.detail-section');
+            if (detailSections.length > 0) {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, observerOptions);
+                
+                detailSections.forEach(section => {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(20px)';
+                    section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    observer.observe(section);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
