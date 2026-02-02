@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-    <title>UI Website Laundry Sepatu - Detail Project | Portofolio Muammar</title>
+    <title>UI Website Laundry Sepatu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,10 +52,6 @@
                 <div class="project-meta">
                     <span class="project-category">UI/UX Design</span>
                     <h1 class="project-title">UI Website Laundry Sepatu</h1>
-                    <div class="project-year">
-                        <i class="far fa-calendar-alt"></i>
-                        <span>2024</span>
-                    </div>
                 </div>
             </div>
 
@@ -99,37 +95,7 @@
                         <div class="dot" data-index="3"></div>
                     </div>
                 </div>
-                
-                <!-- Project Stats -->
-                <div class="project-stats">
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value">12</span>
-                            <span class="stat-label">Halaman UI</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value">4</span>
-                            <span class="stat-label">Minggu</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value">1</span>
-                            <span class="stat-label">Tool Utama</span>
-                        </div>
-                    </div>
-                </div>
+               
             </section>
 
             <!-- Project Details -->
@@ -284,14 +250,6 @@
                 <!-- Call to Action -->
                 <div class="project-cta">
                     <div class="cta-content">
-                        <h3>Tertarik dengan Project Ini?</h3>
-                        <p>Mari berdiskusi tentang bagaimana saya dapat membantu mewujudkan project Anda</p>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="index.html#contact" class="btn cta-btn">
-                            <i class="fas fa-envelope"></i>
-                            Hubungi Saya
-                        </a>
                         <a href="https://www.figma.com/proto/IqJBYM6hImpJHNvr0xxMZM/TUGAS-IMK?page-id=0%3A1&node-id=1-2&viewport=103%2C88%2C0.2&t=HH1UuI2tk6d6yhzN-1&scaling=min-zoom&content-scaling=fixed" 
                            target="_blank" class="btn btn-secondary cta-btn">
                             <i class="fab fa-figma"></i>
@@ -338,153 +296,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script>
-        // Slider Functionality for Detail Pages
-        function initSlider() {
-            const sliderTrack = document.getElementById('slider-track');
-            const sliderDots = document.querySelectorAll('.dot');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            
-            let currentSlide = 0;
-            const totalSlides = document.querySelectorAll('.slide').length;
-            
-            // Update slider position
-            function updateSlider() {
-                if (sliderTrack) {
-                    sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-                }
-                
-                // Update active dot
-                sliderDots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentSlide);
-                });
-                
-                // Update button states
-                if (prevBtn) prevBtn.disabled = currentSlide === 0;
-                if (nextBtn) nextBtn.disabled = currentSlide === totalSlides - 1;
-                
-                // Add/remove disabled styles
-                if (prevBtn) prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
-                if (nextBtn) nextBtn.style.opacity = currentSlide === totalSlides - 1 ? '0.5' : '1';
-            }
-            
-            // Go to specific slide
-            function goToSlide(index) {
-                currentSlide = index;
-                updateSlider();
-            }
-            
-            // Next slide
-            function nextSlide() {
-                if (currentSlide < totalSlides - 1) {
-                    currentSlide++;
-                    updateSlider();
-                }
-            }
-            
-            // Previous slide
-            function prevSlide() {
-                if (currentSlide > 0) {
-                    currentSlide--;
-                    updateSlider();
-                }
-            }
-            
-            // Event listeners for dots
-            sliderDots.forEach(dot => {
-                dot.addEventListener('click', () => {
-                    const index = parseInt(dot.getAttribute('data-index'));
-                    goToSlide(index);
-                });
-            });
-            
-            // Event listeners for buttons
-            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft') {
-                    prevSlide();
-                } else if (e.key === 'ArrowRight') {
-                    nextSlide();
-                }
-            });
-            
-            // Touch/swipe support for mobile
-            if (sliderTrack) {
-                let touchStartX = 0;
-                let touchEndX = 0;
-                
-                sliderTrack.addEventListener('touchstart', (e) => {
-                    touchStartX = e.changedTouches[0].screenX;
-                });
-                
-                sliderTrack.addEventListener('touchend', (e) => {
-                    touchEndX = e.changedTouches[0].screenX;
-                    handleSwipe();
-                });
-                
-                function handleSwipe() {
-                    const swipeThreshold = 50;
-                    const diff = touchStartX - touchEndX;
-                    
-                    if (Math.abs(diff) > swipeThreshold) {
-                        if (diff > 0) {
-                            nextSlide();
-                        } else {
-                            prevSlide();
-                        }
-                    }
-                }
-            }
-            
-            // Initialize
-            updateSlider();
-        }
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-        // Initialize when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            // Check if we're on a detail page (has slider)
-            if (document.getElementById('slider-track')) {
-                initSlider();
-            }
-            
-            // Set current year in footer
-            const currentYearElement = document.getElementById('current-year');
-            if (currentYearElement) {
-                currentYearElement.textContent = new Date().getFullYear();
-            }
-            
-            // Add animation to detail sections on scroll
-            const detailSections = document.querySelectorAll('.detail-section');
-            if (detailSections.length > 0) {
-                const observerOptions = {
-                    threshold: 0.1,
-                    rootMargin: '0px 0px -50px 0px'
-                };
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }
-                    });
-                }, observerOptions);
-                
-                detailSections.forEach(section => {
-                    section.style.opacity = '0';
-                    section.style.transform = 'translateY(20px)';
-                    section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                    observer.observe(section);
-                });
-            }
-        });
-    </script>
+    <!-- JavaScript -->
+    <script src="script-detail.js"></script>
 </body>
-
 </html>
-
