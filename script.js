@@ -165,3 +165,126 @@ document.querySelectorAll('.skill-item').forEach(item => {
         this.style.boxShadow = 'none';
     });
 });
+
+// Update current year in footer for all pages
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
+    
+    // Fix for detail page navigation
+    const navLinks = document.getElementById('nav-links');
+    if (navLinks) {
+        const currentPage = window.location.pathname.split('/').pop();
+        
+        // Update active links based on current page
+        if (currentPage === 'detail.html' || currentPage.startsWith('detail-')) {
+            // We're on a detail page, update navigation links
+            const navItems = navLinks.querySelectorAll('a');
+            navItems.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href.startsWith('index.html')) {
+                    // Keep as is
+                } else if (href === '#home') {
+                    link.setAttribute('href', 'index.html');
+                } else if (href === '#about') {
+                    link.setAttribute('href', 'index.html#about');
+                } else if (href === '#projects') {
+                    link.setAttribute('href', 'index.html#projects');
+                } else if (href === '#contact') {
+                    link.setAttribute('href', 'index.html#contact');
+                }
+            });
+        }
+    }
+});
+
+// Scroll to Top Functionality
+const scrollTopBtn = document.getElementById('scroll-top');
+
+// Show/hide scroll to top button based on scroll position
+window.addEventListener('scroll', () => {
+    // Existing scroll functionality...
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    // Sticky photo scroll functionality
+    handleStickyPhotoScroll();
+    
+    // Show scroll to top button after scrolling 300px
+    if (scrollTopBtn) {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    }
+});
+
+// Scroll to top when button is clicked
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (scrollTopBtn) {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('visible');
+        }
+    }
+});
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize full screen gallery
+    initFullscreenGallery();
+    
+    // Add keyboard event listener
+    document.addEventListener('keydown', handleFullscreenKeyboard);
+    
+    // Set current year in footer
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
+    
+    // Scroll to Top Functionality for detail page
+    const scrollTopBtn = document.getElementById('scroll-top');
+    
+    // Show/hide scroll to top button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (scrollTopBtn) {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        }
+    });
+    
+    // Scroll to top when button is clicked
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Initialize scroll to top button visibility
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add('visible');
+        }
+    }
+});
