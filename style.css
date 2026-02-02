@@ -1407,3 +1407,68 @@ footer {
         box-shadow: none !important;
     }
 }
+
+
+/* ========== Scroll to Top Button ========== */
+
+.scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--primary);
+    color: white;
+    border: 3px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(20px);
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    background-color: var(--accent-2);
+    color: var(--text-color);
+}
+
+.scroll-top:active {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0px var(--border);
+}
+
+/* Responsive adjustments for scroll top button */
+@media (max-width: 768px) {
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-top {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
