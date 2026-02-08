@@ -236,53 +236,13 @@ if (scrollTopBtn) {
     });
 }
 
-
+// Existing code continues...
+// Update current year in footer for all pages
 document.addEventListener('DOMContentLoaded', function() {
+    // Existing code...
+    
+    // Initialize scroll to top button visibility
     if (scrollTopBtn) {
-        if (window.scrollY > 300) {
-            scrollTopBtn.classList.add('visible');
-        }
-    }
-});
-
-// Initialize everything when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize full screen gallery
-    initFullscreenGallery();
-    
-    // Add keyboard event listener
-    document.addEventListener('keydown', handleFullscreenKeyboard);
-    
-    // Set current year in footer
-    const currentYearElement = document.getElementById('current-year');
-    if (currentYearElement) {
-        currentYearElement.textContent = new Date().getFullYear();
-    }
-    
-    // Scroll to Top Functionality for detail page
-    const scrollTopBtn = document.getElementById('scroll-top');
-    
-    // Show/hide scroll to top button based on scroll position
-    window.addEventListener('scroll', () => {
-        if (scrollTopBtn) {
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        }
-    });
-    
-    // Scroll to top when button is clicked
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Initialize scroll to top button visibility
         if (window.scrollY > 300) {
             scrollTopBtn.classList.add('visible');
         }
