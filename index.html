@@ -16,7 +16,7 @@
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
         <i class="fas fa-moon" id="theme-icon"></i>
     </button>
-,
+
     <!-- Header & Navigation -->
     <header id="header">
         <div class="container nav-container">
@@ -97,139 +97,137 @@
                         </p>
                     </div>
                     
-                    <!-- Info Container -->
-                    <div class="info-container">
-                        <!-- Pendidikan -->
-                        <div class="info-section">
-                            <div class="info-header">
-                                <i class="fas fa-graduation-cap"></i>
-                                <h4>Pendidikan</h4>
+                    <!-- Info Container yang telah disederhanakan -->
+                    <div class="info-container-compact">
+                        <!-- Pendidikan dan Sertifikasi berdampingan -->
+                        <div class="row-compact">
+                            <!-- Pendidikan -->
+                            <div class="info-compact-section education-section">
+                                <div class="info-compact-header">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h4>Pendidikan</h4>
+                                </div>
+                                <div class="info-compact-content">
+                                    <div class="compact-item">
+                                        <strong>S1 Teknik Informatika</strong>
+                                        <div class="compact-meta">
+                                            <span class="compact-company">Universitas Pamulang</span>
+                                            <span class="compact-date">2021 – 2025</span>
+                                        </div>
+                                        <div class="compact-detail">IPK: 3.55</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info-content">
-                                <ul class="about-list">
-                                    <li>
-                                        <strong>S1 Teknik Informatika</strong> – Universitas Pamulang  
-                                        <br>
-                                        <span>IPK 3.55 | 2021 – 2025</span>
-                                    </li>
-                                </ul>
+
+                            <!-- Sertifikasi -->
+                            <div class="info-compact-section certification-section">
+                                <div class="info-compact-header">
+                                    <i class="fas fa-certificate"></i>
+                                    <h4>Sertifikasi</h4>
+                                </div>
+                                <div class="info-compact-content">
+                                    <div class="compact-item">
+                                        <strong>Programmer</strong>
+                                        <div class="compact-meta">
+                                            <span class="compact-company">BNSP</span>
+                                            <span class="compact-date">2025 – 2028</span>
+                                        </div>
+                                        <a href="assets/sertifikat1.pdf" class="compact-cert-btn" target="_blank">
+                                            Lihat Sertifikat <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Pengalaman -->
-                        <div class="info-section">
-                            <div class="info-header">
+                        <div class="info-compact-section experience-section">
+                            <div class="info-compact-header">
                                 <i class="fas fa-briefcase"></i>
                                 <h4>Pengalaman</h4>
                             </div>
-                            <div class="info-content">
-                                <ul class="about-list">
-                                    <li>
-                                        <strong>Web Developer Intern</strong> – Java Web Media  
-                                        <br>
-                                        <span>
-•   Mengembangkan website menggunakan HTML, CSS, JavaScript, dan PHP (CodeIgniter). <br>
-•   Menyesuaikan struktur database sesuai kebutuhan pengembangan fitur website. <br>
-•   Melakukan perbaikan bug pada website. <br>
-•   Melakukan pengujian fungsional untuk memastikan seluruh fitur website berjalan sesuai kebutuhan. <br>
-
-                                        </span>
-                                    </li>
-                                </ul>
+                            <div class="info-compact-content">
+                                <div class="compact-item">
+                                    <strong>Web Developer Intern</strong>
+                                    <div class="compact-meta">
+                                        <span class="compact-company">Java Web Media</span>
+                                        <span class="compact-date">2024</span>
+                                    </div>
+                                    <div class="compact-detail">
+                                        • Mengembangkan website menggunakan HTML, CSS, JavaScript, dan PHP (CodeIgniter). <br> 
+• Menyesuaikan struktur database sesuai kebutuhan pengembangan fitur website. <br>
+• Melakukan perbaikan bug pada website. <br>
+• Melakukan pengujian fungsional untuk memastikan seluruh fitur website berjalan sesuai kebutuhan. 
+                                    </div>
+                                </div>
+                                <div class="compact-item">
+                                    <strong>Pemateri</strong>
+                                    <div class="compact-meta">
+                                        <span class="compact-company">PKM</span>
+                                        <span class="compact-date">2023</span>
+                                    </div>
+                                    <div class="compact-detail">
+                                        • Menyusun dan menyampaikan materi pengenalan dasar HTML dan CSS kepada peserta. <br>
+• Menjelaskan penggunaan tag HTML dasar dan CSS untuk tata letak dan tampilan. <br>
+• Mengajarkan praktik pembuatan halaman web sederhana kepada peserta. 
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Sertifikasi -->
-                        <div class="info-section">
-                            <div class="info-header">
-                                <i class="fas fa-certificate"></i>
-                                <h4>Sertifikasi</h4>
-                            </div>
-                            <div class="info-content">
-                                <ul class="about-list">
-                                    <li>
-                                        <strong>Programmer</strong> – Badan Nasional Sertifikasi Profesi  
-                                        <br>
-                                        <span>2025 – 2028</span>
-                                        <a href="assets/sertifikat1.pdf" class="certification-btn-small" target="_blank">
-                                            Lihat Sertifikat <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Tools & Skills -->
-                        <div class="info-section skills-section" id="skills-section">
-                            <div class="info-header">
+                        <!-- Tools & Skills - Dipisah antara development dan design -->
+                        <div class="info-compact-section skills-section">
+                            <div class="info-compact-header">
                                 <i class="fas fa-tools"></i>
                                 <h4>Tools & Skills</h4>
                             </div>
-                            <div class="skills-container">
+                            <div class="skills-compact-container">
                                 <!-- Development Tools -->
-                                <div class="skills-category">
-                                    <h5><i class="fas fa-code"></i> Development Tools</h5>
-                                    <div class="skills-grid">
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto4.png" alt="HTML5" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">HTML</div>
+                                <div class="skills-category-compact">
+                                    <h5><i class="fas fa-code"></i> Development</h5>
+                                    <div class="skills-compact-grid">
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto4.png" alt="HTML5" loading="lazy">
+                                            <span>HTML</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto5.png" alt="CSS3" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">CSS</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto5.png" alt="CSS3" loading="lazy">
+                                            <span>CSS</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto3.png" alt="JavaScript" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">JavaScript</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto3.png" alt="JavaScript" loading="lazy">
+                                            <span>JavaScript</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto2.png" alt="PHP" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">PHP</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto2.png" alt="PHP" loading="lazy">
+                                            <span>PHP</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto9.png" alt="MySQL" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">MySQL</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto9.png" alt="MySQL" loading="lazy">
+                                            <span>MySQL</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto10.png" alt="WordPress" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">WordPress</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto10.png" alt="WordPress" loading="lazy">
+                                            <span>WordPress</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Design Tools -->
-                                <div class="skills-category">
-                                    <h5><i class="fas fa-paint-brush"></i> Design Tools</h5>
-                                    <div class="skills-grid">
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto7.png" alt="Figma" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">Figma</div>
+                                <div class="skills-category-compact">
+                                    <h5><i class="fas fa-paint-brush"></i> Design</h5>
+                                    <div class="skills-compact-grid">
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto7.png" alt="Figma" loading="lazy">
+                                            <span>Figma</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto6.png" alt="Photoshop" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">Photoshop</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto6.png" alt="Photoshop" loading="lazy">
+                                            <span>Photoshop</span>
                                         </div>
-                                        <div class="skill-item">
-                                            <div class="skill-icon">
-                                                <img src="foto/foto8.png" alt="Canva" loading="lazy">
-                                            </div>
-                                            <div class="skill-name">Canva</div>
+                                        <div class="skill-compact-item">
+                                            <img src="foto/foto8.png" alt="Canva" loading="lazy">
+                                            <span>Canva</span>
                                         </div>
                                     </div>
                                 </div>
@@ -242,137 +240,162 @@
     </section>
 
     <!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">Project</h2>
-
-        <!-- Project Categories -->
-        <div class="project-categories">
-            <button class="category-btn active" data-category="all">Semua</button>
-            <button class="category-btn" data-category="web">Web Development</button>
-            <button class="category-btn" data-category="uiux">Design UI/UX</button>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Project 1 - UI/UX -->
-            <a href="detail.html" class="project-link" data-category="uiux">
-                <div class="project-card">
-                    <img src="foto/foto11.png" alt="UI Website Laundry Sepatu" class="project-img" loading="lazy">
-
-                    <div class="project-info">
-                        <h3>UI Website Laundry Sepatu</h3>
-                        <p>
-                            Merupakan UI website tugas mata kuliah Interaksi Manusia dan Komputer.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Figma</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 2 - Web Development -->
-            <a href="project-detail-2.html" class="project-link" data-category="web">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
-                         alt="Analytics Dashboard" class="project-img" loading="lazy">
-
-                    <div class="project-info">
-                        <h3>Analytics Dashboard</h3>
-                        <p>
-                            Dashboard interaktif untuk visualisasi data dengan grafik dan filter.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Chart.js</span>
-                            <span class="tag">Express</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 3 - UI/UX -->
-            <a href="project-detail-3.html" class="project-link" data-category="uiux">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80"
-                         alt="Mobile App Design" class="project-img" loading="lazy">
-
-                    <div class="project-info">
-                        <h3>Mobile App UI Design</h3>
-                        <p>
-                            Desain UI aplikasi mobile untuk manajemen tugas dengan fokus pada user experience.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Mobile Design</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 4 - Web Development -->
-            <a href="project-detail-4.html" class="project-link" data-category="web">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80"
-                         alt="E-Commerce Website" class="project-img" loading="lazy">
-
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>
-                            Website e-commerce dengan sistem keranjang belanja dan checkout.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Kontak</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>muamar.idm008@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Telepon</h4>
-                            <p>+62 856 9515 5879</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Lokasi</h4>
-                            <p>Ciputat, Tangerang Selatan, Banten</p>
+            <h2 class="section-title">Project</h2>
+
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="uiux">Design UI/UX</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 - UI/UX -->
+                <a href="detail.html" class="project-link" data-category="uiux">
+                    <div class="project-card">
+                        <img src="foto/foto11.png" alt="UI Website Laundry Sepatu" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>UI Website Laundry Sepatu</h3>
+                            <p>
+                                Merupakan UI website tugas mata kuliah Interaksi Manusia dan Komputer.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Figma</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <!-- Project 2 - Web Development -->
+                <a href="project-detail-2.html" class="project-link" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
+                             alt="Analytics Dashboard" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>
+                                Dashboard interaktif untuk visualisasi data dengan grafik dan filter.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 - UI/UX -->
+                <a href="project-detail-3.html" class="project-link" data-category="uiux">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80"
+                             alt="Mobile App Design" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>Mobile App UI Design</h3>
+                            <p>
+                                Desain UI aplikasi mobile untuk manajemen tugas dengan fokus pada user experience.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Mobile Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 - Web Development -->
+                <a href="project-detail-4.html" class="project-link" data-category="web">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80"
+                             alt="E-Commerce Website" class="project-img" loading="lazy">
+
+                        <div class="project-info">
+                            <h3>E-Commerce Website</h3>
+                            <p>
+                                Website e-commerce dengan sistem keranjang belanja dan checkout.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact Section - Minimalis -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Kontak</h2>
+        <div class="contact-content-compact">
+            <!-- Email -->
+            <div class="contact-item-compact">
+                <div class="contact-icon-compact">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text-compact">
+                    <h4>Email</h4>
+                    <p>muamar.idm008@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Telepon -->
+            <div class="contact-item-compact">
+                <div class="contact-icon-compact">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text-compact">
+                    <h4>Telepon</h4>
+                    <p>+62 856 9515 5879</p>
+                </div>
+            </div>
+            
+            <!-- Lokasi -->
+            <div class="contact-item-compact">
+                <div class="contact-icon-compact">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text-compact">
+                    <h4>Lokasi</h4>
+                    <p>Ciputat, Tangerang Selatan</p>
+                </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="contact-item-compact contact-social-compact">
+                <div class="contact-icon-compact">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="contact-text-compact">
+                    <h4>Sosial Media</h4>
+                    <div class="social-icons-compact">
+                        <a href="https://www.linkedin.com/in/muammar473/" target="_blank" class="social-icon-compact" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Ammar40404" target="_blank" class="social-icon-compact" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon-compact" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -390,7 +413,7 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h3>Ikuti Saya</h3>
+                    <h3>Sosial Media</h3>
                     <div class="social-icons">
                         <a href="https://github.com/Ammar40404" target="_blank" class="social-icon" aria-label="GitHub">
                             <i class="fab fa-github"></i>
@@ -398,16 +421,19 @@
                         <a href="https://www.linkedin.com/in/muammar473/" target="_blank" class="social-icon" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; <span id="current-year"></span>Portofolio - Muammar</p>
+                <p>&copy; <span id="current-year"></span> Portofolio - Muammar</p>
             </div>
         </div>
     </footer>
 
-        <!-- Scroll to Top Button -->
+    <!-- Scroll to Top Button -->
     <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
