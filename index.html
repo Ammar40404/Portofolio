@@ -79,7 +79,7 @@
                 <!-- Foto dengan container untuk sticky scroll -->
                 <div class="about-image-wrapper" id="sticky-photo">
                     <div class="about-image">
-                        <img src="foto/foto1q.jpg" alt="Muammar - Tentang Saya" loading="lazy">
+                        <img src="foto/foto1.jpeg" alt="Muammar - Tentang Saya" loading="lazy">
                     </div>
                 </div>
                 
@@ -239,115 +239,165 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Project</h2>
+   <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Project</h2>
 
-            <!-- Project Categories -->
-            <div class="project-categories">
-                <button class="category-btn active" data-category="all">Semua</button>
-                <button class="category-btn" data-category="web">Web Development</button>
-                <button class="category-btn" data-category="uiux">Design UI/UX</button>
+        <!-- Project Categories -->
+        <div class="project-categories">
+            <button class="category-btn active" data-category="all">Semua</button>
+            <button class="category-btn" data-category="web">Website</button>
+            <button class="category-btn" data-category="uiux">Design</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 - Web Development -->
+            <div class="project-link" data-category="web">
+                <div class="project-card">
+                    <!-- Foto 1:1 Kotak Sempurna -->
+                    <div class="project-img-container">
+                        <img src="foto/foto12.png" alt="Website E-Commerce WordPress" class="project-img" loading="lazy">
+                        <div class="project-img-overlay"></div>
+                        <span class="project-category-badge web">Web</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Website E-Commerce WordPress</h3>
+                        <p>
+                            Merupakan UI website tugas mata kuliah E-Commerce dengan fitur lengkap untuk toko online.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        
+                        <!-- Dua Tombol: Detail dan Live Demo -->
+                        <div class="project-buttons">
+                            <a href="detail.html" class="project-btn detail">
+                                <i class="fas fa-search"></i> Detail
+                            </a>
+                            <a href="https://example.com/demo1" class="project-btn demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>View
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="projects-grid">
-                <!-- Project 1 - Web Development -->
-                <div class="project-link" data-category="web">
-                    <div class="project-card">
-                        <img src="foto/foto12.png" alt="Website E-Commerce WordPress" class="project-img" loading="lazy">
-
-                        <div class="project-info">
-                            <h3>Website E-Commerce WordPress</h3>
-                            <p>
-                                Merupakan UI website tugas mata kuliah E-Commerce.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">MySQL</span>
-                            </div>
-                            <!-- Tombol Lihat Project -->
-                            <a href="detail.html" class="btn project-view-btn">
-                                Lihat Project <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 - Web Development -->
-                <div class="project-link" data-category="web">
-                    <div class="project-card">
+            <!-- Project 2 - Web Development -->
+            <div class="project-link" data-category="web">
+                <div class="project-card">
+                    <!-- Foto 1:1 Kotak Sempurna -->
+                    <div class="project-img-container">
                         <img src="foto/foto13.png" alt="Website Monitoring Progres Hafalan Al-Qur'an" class="project-img" loading="lazy">
+                        <div class="project-img-overlay"></div>
+                        <span class="project-category-badge web">Web</span>
+                    </div>
 
-                        <div class="project-info">
-                            <h3>Website Monitoring Progres Hafalan Al-Qur'an</h3>
-                            <p>
-                                Website untuk memantau progres hafalan Al-Qur'an.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">PHP</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">MySQL</span>
-                            </div>
-                            <!-- Tombol Lihat Project -->
-                            <a href="detail.html" class="btn project-view-btn">
-                                Lihat Project <i class="fas fa-external-link-alt"></i>
+                    <div class="project-info">
+                        <h3>Website Monitoring Progres Hafalan Al-Qur'an</h3>
+                        <p>
+                            Website untuk memantau progres hafalan Al-Qur'an dengan fitur tracking dan reporting.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            
+                            <span class="tag">CodeIgniter</span>
+                        </div>
+                        
+                        <!-- Dua Tombol: Detail dan Live Demo -->
+                        <div class="project-buttons">
+                            <a href="detail.html" class="project-btn detail">
+                                <i class="fas fa-search"></i> Detail
+                            </a>
+                            <a href="http://ysbjd.infinityfreeapp.com/" class="project-btn demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 3 - UI/UX Design -->
-                <div class="project-link" data-category="uiux">
-                    <div class="project-card">
+            <!-- Project 3 - UI/UX Design -->
+            <div class="project-link" data-category="uiux">
+                <div class="project-card">
+                    <!-- Foto 1:1 Kotak Sempurna -->
+                    <div class="project-img-container">
                         <img src="foto/foto11.png" alt="UI Design Website Laundry Sepatu" class="project-img" loading="lazy">
+                        <div class="project-img-overlay"></div>
+                        <span class="project-category-badge uiux">UI/UX</span>
+                    </div>
 
-                        <div class="project-info">
-                            <h3>UI Design Website Laundry Sepatu</h3>
-                            <p>
-                                Merupakan UI website tugas mata kuliah Interaksi Manusia dan Komputer.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">Figma</span>
-                            </div>
-                            <!-- Tombol Lihat Project -->
-                            <a href="project-detail-2.html" class="btn project-view-btn">
-                                Lihat Project <i class="fas fa-external-link-alt"></i>
+                    <div class="project-info">
+                        <h3>UI Design Website Laundry Sepatu</h3>
+                        <p>
+                            Merupakan UI website tugas mata kuliah Interaksi Manusia dan Komputer untuk laundry sepatu.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Wireframe</span>
+                        </div>
+                        
+                        <!-- Dua Tombol: Detail dan Live Demo -->
+                        <div class="project-buttons">
+                            <a href="project-detail-2.html" class="project-btn detail">
+                                <i class="fas fa-search"></i> Detail
+                            </a>
+                            <a href="https://www.figma.com/file/example" class="project-btn demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 4 - Design Poster -->
-                <div class="project-link" data-category="uiux">
-                    <div class="project-card">
+            <!-- Project 4 - Design Poster -->
+            <div class="project-link" data-category="uiux">
+                <div class="project-card">
+                    <!-- Foto 1:1 Kotak Sempurna -->
+                    <div class="project-img-container">
                         <img src="foto/foto14.png" alt="Design Poster" class="project-img" loading="lazy">
+                        <div class="project-img-overlay"></div>
+                        <span class="project-category-badge uiux">Design</span>
+                    </div>
 
-                        <div class="project-info">
-                            <h3>Design Poster</h3>
-                            <p>
-                                Design poster untuk berbagai keperluan promosi dan informasi.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Canva</span>
-                                <span class="tag">Photoshop</span>
-                            </div>
-                            <!-- Tombol Lihat Project -->
-                            <a href="project-detail-2.html" class="btn project-view-btn">
-                                Lihat Project <i class="fas fa-external-link-alt"></i>
+                    <div class="project-info">
+                        <h3>Design Poster</h3>
+                        <p>
+                            Design poster untuk berbagai keperluan promosi dan informasi dengan visual yang menarik.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Canva</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Visual Design</span>
+                        </div>
+                        
+                        <!-- Dua Tombol: Detail dan Live Demo -->
+                        <div class="project-buttons">
+                            <a href="project-detail-3.html" class="project-btn detail">
+                                <i class="fas fa-search"></i> Detail
+                            </a>
+                            <a href="https://example.com/poster-design" class="project-btn demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section - Minimalis -->
     <section id="contact" class="contact">
